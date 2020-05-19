@@ -8,10 +8,7 @@ btn.addEventListener("click", () => {
   const inputTag = document.querySelector("#input");
   const errorTag = document.querySelector("#error");
   const input = inputTag.value;
-  const lastIndex = word.length - 1;
-  const w = word[lastIndex];
-  const i = input[0];
-  if (w === i) {
+  if (word[word.length - 1] === input[0]) {
     wordTag.textContent = input;
     errorTag.textContent = "";
     inputTag.value = "";
