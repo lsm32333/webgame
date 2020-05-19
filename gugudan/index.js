@@ -6,6 +6,7 @@ document.querySelector("#click").addEventListener("click", () => {
   if (a) {
     if (b) {
       const c = a * b;
+      r.textContent = c;
     } else {
       r.textContent = "두 번째 값을 입력하세요.";
     }
