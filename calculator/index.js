@@ -11,16 +11,68 @@ let temp;
 let operator;
 
 plusButton.addEventListener("click", () => {
-  if (numberInput.value) {
-    //    '5' -> 5
-    temp = numberInput.value;
+  if (temp) {
     operator = "+";
     numberInput.value = null;
+  } else {
+    if (numberInput.value) {
+      // '5' -> 5
+      temp = Number(numberInput.value);
+      operator = "+";
+      numberInput.value = null;
+      resultInput.value = null;
+    }
+  }
+});
+
+minusButton.addEventListener("click", () => {
+  if (temp) {
+    operator = "-";
+    numberInput.value = null;
+  } else {
+    if (numberInput.value) {
+      // '5' -> 5
+      temp = Number(numberInput.value);
+      operator = "-";
+      numberInput.value = null;
+      resultInput.value = null;
+    }
+  }
+});
+
+multiplyButton.addEventListener("click", () => {
+  if (temp) {
+    operator = "*";
+    numberInput.value = null;
+  } else {
+    if (numberInput.value) {
+      // '5' -> 5
+      temp = Number(numberInput.value);
+      operator = "*";
+      numberInput.value = null;
+      resultInput.value = null;
+    }
+  }
+});
+
+divideButton.addEventListener("click", () => {
+  if (temp) {
+    operator = "/";
+    numberInput.value = null;
+  } else {
+    if (numberInput.value) {
+      // '5' -> 5
+      temp = Number(numberInput.value);
+      operator = "/";
+      numberInput.value = null;
+      resultInput.value = null;
+    }
   }
 });
 
 clearButton.addEventListener("click", () => {
-  numberInput.value = "";
+  numberInput.value = null;
+  resultInput.value = null;
   temp = null;
   operator = null;
 });
@@ -38,6 +90,7 @@ calculateButton.addEventListener("click", () => {
       } else if (operator === "/") {
         resultInput.value = temp / Number(numberInput.value);
       }
+      temp = Number(resultInput.value);
     }
   } else {
     if (numberInput.value) {
