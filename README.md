@@ -10,7 +10,7 @@
 
 - 계산기
 
-<img src="https://user-images.githubusercontent.com/59558363/83372756-350a2000-a401-11ea-98db-2d367e9aed3c.png" whith="200" heigth="400"></img>
+<img src="https://user-images.githubusercontent.com/59558363/83372756-350a2000-a401-11ea-98db-2d367e9aed3c.png" whith="150" heigth="200"></img>
 
 - 숫자야구
 
